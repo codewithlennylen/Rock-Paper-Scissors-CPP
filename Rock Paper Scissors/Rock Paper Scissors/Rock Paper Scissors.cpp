@@ -13,6 +13,7 @@ void game() {
     bool run = true;
     char userSelection;
     char computerSelection;
+    int games;
     while (run) {
         cout << "Select Rock[R], Paper[P] or Scissors[S]" << endl;
         cin >> userSelection;
@@ -25,6 +26,7 @@ void game() {
         if (((computerSelection == 'R') && (userSelection == 'S')) || ((computerSelection == 'P') && (userSelection == 'R')) || ((computerSelection == 'S') && (userSelection == 'P'))) {
             cout << "You chose : " << userSelection << "while the Computer Chose : " << computerSelection << endl;
             cout << "You Lose !!!" << endl;
+           
         }
         else if (computerSelection == userSelection) {
             cout << "You Chose : " << userSelection << " and Computer chose : " << computerSelection << endl;
